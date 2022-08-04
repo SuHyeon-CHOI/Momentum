@@ -3,146 +3,70 @@
 }
 
 img {
-  position:absolute;
-  width:100%;
-  height:100%;
-  left: 0px;
-  top: 0px;
-  right:0px;
-  bottom:0px;
-  z-index: -1;
-  opacity:80%;
-}
-
-.clockcss {
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-}
-
-.clockcss1 {
-  display: inline-block;
-  font-family: SCDream4;
-  font-size: 90px;
-}
-
-.clockcss2 {
-  display: inline-block;
-  font-size: 40px;
-  font-family: SCDream2;
-}
-
-#login-form{
-  text-align:center;
-  color:white;
-  margin:0 auto;
-}
-  #login-form input:first-child{
-      text-align: center;
-      color:white;
-      font-size:1.3rem;
-      padding: 10px;
-      width: 240px;
-      background-color: rgba(255,255,255,0.2);
-      border:none;
-      transition: all, 0.4s;
-  }
-      #login-form input:first-child:hover{
-          background-color: rgba(255,255,255,0.4);
-      }   
-      #login-form input:hover::-webkit-input-placeholder{ /*placeholder color change*/
-          color: rgb(50, 50, 50);
-      }
-      #login-form input:first-child:focus{
-          outline:none;
-          border-bottom: 1px solid white;
-          background-color:rgba(0,0,0,0);
-      }        
-
-
-.greeting1{
-  text-align: center;
-  color: white;
-}
-
-.quote {
-  color: white;
-  text-align: center;
-  position:fixed;
-  bottom:20px;
-  margin-left: center;
-}
-
-.quote1 {
-font-size: 1.3rem;
-}
-
-input {
-  width: 25rem;
-  height: 3rem;
-  line-height: 3rem;
-  padding-left: 0.5rem;
-  padding: 0.2rem;
-  font-size: 200%;
-  text-align: center;
-  color: white;
-  outline: none;
-  border: 0;
-  background-color: transparent;
-  border-bottom: 0.2rem solid #fff;
-}
-input::placeholder {
-  color: white;
-}
-
-.search-container {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  font-size: 120%;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.search-container input {
-  width: 18rem;
-  height: 2rem;
-  font-size: 120%;
-  text-align: start;
-  border-bottom: transparent;
-  cursor: pointer;
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.search-container input:hover {
-  border-bottom: 0.2rem solid #fff;
+.name {
+  border: none;
+  background: transparent;
+  font-size: 40px;
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 150px;
 }
 
-.search-container span {
-  margin-top: 2rem;
-  margin-left: 1rem;
+.name::placeholder {
+  color: whitesmoke;
 }
 
+.name:focus,
+.name:active {
+  outline: none;
+  color: whitesmoke;
+}
 
-@font-face {
-  font-family : 'SCDream1';
-  src: url('./fonts/SCDream1.woff') format('woff');
+.todo {
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  border-bottom: 2px solid whitesmoke;
 }
-@font-face {
-  font-family : 'SCDream5';
-  src: url('./fonts/SCDream5.woff') format('woff');
+
+.todo::placeholder {
+  color: whitesmoke;
 }
-@font-face {
-  font-family : 'SCDream6';
-  src: url('./fonts/SCDream6.woff') format('woff');
+
+.todo:focus,
+.todo:active {
+  outline: nones;
+  color: whitesmoke;
 }
-@font-face {
-  font-family : 'SCDream3';
-  src: url('./fonts/SCDream3.woff') format('woff');
+
+#clock {
+  color: whitesmoke;
+  font-size: 100px;
 }
-@font-face {
-  font-family : 'SCDream4';
-  src: url('./fonts/SCDream4.woff') format('woff');
+
+#greeting,
+#todo-list,
+#quote,
+#weather {
+  color: whitesmoke;
 }
-@font-face {
-  font-family : 'SCDream2';
-  src: url('./fonts/SCDream2.woff') format('woff');
+
+button {
+  background: transparent;
+  margin-left: 10px;
+  border: none;
+  color: whitesmoke
 }
